@@ -1,0 +1,19 @@
+import random
+ask2 = int(input("enter a number (0,100) : "))
+a = random.randint(0,100)
+print(a)
+kian=1
+ask = input("am i right? yes or no :  ")
+while ask=="no" or ask=="No" or ask=="NO":
+    ask2=input("your number is less or more : ")
+    if ask2=="less":
+        b = random.randint(0,a)
+        print(b)
+        ask = input("am i right? yo or no : ")
+        kian+=1
+    else:
+        b = random.randint(a,100)
+        print(b)
+        ask = input("am i right? yo or no :  ")
+        kian+=1
+print("finelly my number of guess : ",kian)
